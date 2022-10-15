@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins&family=Source+Sans+Pro&display=swap');
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    height: 100%;
+    width: 100%
+}
+
+body
+{
+    min-height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: white;
+    color: #000a16;
+    font-family: Lora, serif;       /*Lora字體優先使用，無法使用則用serif*/
+    font-size: 2.4vh;
+    line-height: 3.6vh;             /*行高 = 字體大小 * 1.5*/
+}
+
+h1, h2, h3
+{
+    font-family: Poppins, sans-serif;
+}
+
+h1
+{
+    font-size: 4.8vh;
+    line-height: 7.2vh;
+    margin: 1vh 0;                 /*與上下元件的距離 與左右元件的距離*/
+}
+
+h2
+{
+    font-size: 3.6vh;
+    line-height: 5.4vh;
+    margin: 0.8vh 0;
+}
+
+h3
+{
+    font-size: 3vh;
+    line-height: 4.5vh;
+    margin: 0.5vh 0;
+}
+
+nav 
+{
+    position: fixed;               /*設定為fixed表示會把它從原本的排版拿出來放在指定位置，不再佔據原本排版的任何空間*/
+    z-index: 999;                  /*深度：數字越大越前面*/
+    top: 10px;
+    left: 10px;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 2vh;
+    line-height: 3vh;
+}
+
+nav > a                           /*nav下的超連結*/
+{
+    background-color: #323232;
+    color: white;
+    padding: 2px 4px;             /*與上下和左右留空*/
+    text-decoration: none;
+    opacity: 0.6;                 /*透明度：0 ~ 1, 越大越不透明*/
+}
+
+nav > a:visited
+{
+    color: white;                /*下面超連結的字體顏色設定覆蓋掉上面的設定，所以這裡再重新定義導覽列的字體顏色*/
+}
+
+article
+{
+    margin: 1.5vh 0;
+    padding: 1vh 5vw;
+}
+
+p
+{
+    margin: 0.2vh 0;
+}
+
+section
+{
+    margin: 1.2vh 0;
+}
+
+section > p
+{
+    text-indent: 5%;               /*縮排*/
+}
+
+a, a:visited
+{
+    color: #323232;
+    text-decoration: underline;    /*加底線*/
+}
+
