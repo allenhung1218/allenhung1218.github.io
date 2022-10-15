@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins&family=Source+Sans+Pro&display=swap');
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    height: 100%;
+    width: 100%
+}
+
+body
+{
+    min-height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: white;
+    color: #000a16;
+    font-family: Lora, serif;       /*Lora字體優先使用，無法使用則用serif*/
+    font-size: 2.4vh;
+    line-height: 3.6vh;             /*行高 = 字體大小 * 1.5*/
+}
+
+article
+{
+    margin: 1.5vh 0;
+    padding: 1vh 5vw;
+}
+
+h1, h2, h3
+{
+    font-family: Poppins, sans-serif;
+}
+
+h1
+{
+    font-size: 4.8vh;
+    line-height: 7.2vh;
+    margin: 1vh 0;                 /*與上下元件的距離 與左右元件的距離*/
+}
